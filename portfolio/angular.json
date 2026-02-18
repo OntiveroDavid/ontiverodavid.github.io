@@ -16,6 +16,8 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
+            "outputPath": "../docs",
+            "baseHref": "/ontiverodavid.github.io/",
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
