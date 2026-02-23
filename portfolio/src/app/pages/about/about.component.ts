@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { fadeInAnimation } from '../../animations/fade-in.animation';
 
 @Component({
   standalone: true,
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './about.html',
   styleUrl: './about.css',
+  animations: [fadeInAnimation],
 })
 export class AboutComponent {
 
