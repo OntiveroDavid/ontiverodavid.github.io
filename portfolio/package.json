@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:ghpages": "ng build --configuration production",
+    "build:ghpages": "ng build --configuration production && node -e \"const fs=require('fs'); const path=require('path'); const src='../docs/browser'; const dst='../docs'; fs.readdirSync(src).forEach(f => { const srcPath=path.join(src,f); const dstPath=path.join(dst,f); if(fs.lstatSync(srcPath).isDirectory()) { if(!fs.existsSync(dstPath)) fs.mkdirSync(dstPath); } fs.cpSync(srcPath, dstPath, {recursive:true,force:true}); }); fs.rmSync(src, {recursive:true,force:true}); console.log('Files copied from browser/ to docs/'); \"",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

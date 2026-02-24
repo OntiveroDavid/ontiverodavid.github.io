@@ -1,0 +1,1 @@
+import{bb as t,cb as n,eb as e,fb as i}from"./chunk-KC6EPZ67.js";var v=t("fadeIn",[i(":enter",[e({opacity:0,transform:"translateY(20px)"}),n("600ms 100ms ease-out",e({opacity:1,transform:"translateY(0)"}))])]);export{v as a};
